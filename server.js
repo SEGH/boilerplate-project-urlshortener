@@ -124,7 +124,7 @@ app.get("/api/shorturl/:thisHereUrl", (req, res) => {
 Url.deleteMany({"original_url": 'http://www.freecodecamp.org'}, (err) => {
   if (err) return err;
 })
-
+*/
 Url.find({}, (err, data) => {
 if (err) {
   return err;
@@ -132,4 +132,3 @@ if (err) {
   console.log(data);
 }
 });
-*/
